@@ -1,3 +1,5 @@
+package mockito;
+
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
@@ -11,7 +13,7 @@ import static org.mockito.Mockito.*;
 
 public class MockObjectTest {
     @Rule
-    public ExpectedException expectedException = ExpectedException.none();
+    public final ExpectedException expectedException = ExpectedException.none();
 
     @Test
     public void classMock(){
